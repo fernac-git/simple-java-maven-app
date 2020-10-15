@@ -28,22 +28,22 @@ pipeline {
     post { 
         always { 
             echo "I will always say Hello again!"
-            sleep 30
+            sleep 10
             echo "after sleep before the end"
         }
         success{
             echo "post execution success"
-            sleep 30
+            sleep 10
             echo "after sleep before the end"
         }
         failure{
             echo "post execution fail"
-            sleep 30
+            sleep 10
             echo "after sleep before the end"
         }
         unstable{
             echo "post execution unstable"
-            sleep 30
+            sleep 10
             echo "after sleep before the end"            
         }
     }
