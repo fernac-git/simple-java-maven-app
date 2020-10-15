@@ -10,6 +10,7 @@ pipeline {
                     VERSION = readMavenPom().getVersion()
                     echo IMAGE
                     echo VERSION
+                    echo "NEW BRANCH"
                     sh 'mvn -B -DskipTests clean package'
                 }
             }
